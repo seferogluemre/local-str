@@ -101,9 +101,13 @@ function App() {
               </Col>
             ))
           ) : (
-            <p>Henüz kullanıcı eklenmedi.</p>
+            <div>
+              <Button onClick={() => localStorage.clear()}>Kayıtları Sil</Button>
+              <p>Henüz kullanıcı eklenmedi.</p>
+            </div>
           )}
         </Row>
+
       </Container>
     </>
   )
